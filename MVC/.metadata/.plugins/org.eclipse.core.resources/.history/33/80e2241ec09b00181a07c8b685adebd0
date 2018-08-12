@@ -1,0 +1,5 @@
+package com.mp.dto;
+
+public class MedicineDto {
+
+}

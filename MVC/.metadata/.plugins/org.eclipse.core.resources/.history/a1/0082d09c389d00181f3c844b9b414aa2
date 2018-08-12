@@ -1,0 +1,7 @@
+package com.mp.common;
+
+import javax.servlet.ServletContainerInitializer;
+
+public class MyServletinitializer implements ServletContainerInitializer {
+
+}

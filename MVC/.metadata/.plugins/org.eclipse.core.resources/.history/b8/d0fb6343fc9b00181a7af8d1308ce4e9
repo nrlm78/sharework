@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>medicines</title>
+</head>
+<body>
+	<h1>Medplus ControlPanel</h1>
+
+
+<table border = "3" width = "100%" bordercolor="#3213ad" background="white">
+         <tr>
+            <th>medicineName</th>
+            <th>manufacturer</th>
+            <th>price</th>
+            <th>quantity</th>
+         </tr>
+         
+         <c:forEach var = "medicine" items = "${medicines}">
+            <tr>
+               <td><c:out value = "${medicine.getMedicineName()}"/></td>
+               <td><c:out value = "${medicine.manufacturer}"/></td>
+               <td><c:out value = "${medicine.price}"/></td>
+               <td><c:out value = "${medicine.quantity}"/></td>
+            </tr>
+         </c:forEach>
+      </table>
+
+
+
+</body>
+</html>

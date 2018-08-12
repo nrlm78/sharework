@@ -1,0 +1,11 @@
+package com.mp.bo;
+
+public class MedicineBo {
+
+	private int medicineNo;
+	private String medicineName;
+	private String manufacturer;
+	private int expiryMonth;
+	private
+	
+}

@@ -1,0 +1,10 @@
+package com.mp.dto;
+
+public class MedicineDto {
+
+
+	private String medicineName;
+	private String manufacturer;
+	private float price;
+	private int quantity;
+}

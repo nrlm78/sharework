@@ -1,0 +1,5 @@
+package com.mp.Dao;
+
+public class MedicineDao {
+
+}

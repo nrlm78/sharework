@@ -1,0 +1,10 @@
+<classpath>
+  <container id="01-firstWebMVC!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="F:/eclipse workspaces/Sriman/MVC/01-firstWebMVC/WebContent/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar">
+      <source-attachment-path>F:/spring/spring-framework-master.zip</source-attachment-path>
+    </entry>
+    <entry id="F:/eclipse workspaces/Sriman/MVC/01-firstWebMVC/WebContent/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar">
+      <source-attachment-path>F:/eclipse workspaces/Sriman/MVC/01-firstWebMVC/WebContent/WEB-INF/lib/spring-web-4.3.9.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

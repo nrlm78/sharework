@@ -1,0 +1,78 @@
+package com.mp.bo;
+
+import java.io.Serializable;
+
+public class MedicineBo implements Serializable {
+
+	private int medicineNo;
+	private String medicineName;
+	private String manufacturer;
+	private int expiryMonth;
+	private int expiryYear;
+	private float price;
+	private int quantity;
+
+	@Override
+	public String toString() {
+		return "MedicineBo [medicineNo=" + medicineNo + ", medicineName=" + medicineName + ", manufacturer="
+				+ manufacturer + ", expiryMonth=" + expiryMonth + ", expiryYear=" + expiryYear + ", price=" + price
+				+ ", quantity=" + quantity + "]";
+	}
+
+	public int getMedicineNo() {
+		return medicineNo;
+	}
+
+	public void setMedicineNo(int medicineNo) {
+		this.medicineNo = medicineNo;
+	}
+
+	public String getMedicineName() {
+		return medicineName;
+	}
+
+	public void setMedicineName(String medicineName) {
+		this.medicineName = medicineName;
+	}
+
+	public String getManufacturer() {
+		return manufacturer;
+	}
+
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
+
+	public int getExpiryMonth() {
+		return expiryMonth;
+	}
+
+	public void setExpiryMonth(int expiryMonth) {
+		this.expiryMonth = expiryMonth;
+	}
+
+	public int getExpiryYear() {
+		return expiryYear;
+	}
+
+	public void setExpiryYear(int expiryYear) {
+		this.expiryYear = expiryYear;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+}
