@@ -1,0 +1,37 @@
+package com.mp.controller;
+
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.web.servlet.mvc.Controller;
+
+
+public class MedicineController extends AbstractController {
+
+	private MedicineService medicineService;
+
+	
+	
+	
+	public MedicineService getMedicineService() {
+		return medicineService;
+	}
+
+
+
+	@Override
+	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
+		
+		ModelAndView mav = null;
+		//List<MedicineDto> medicineDtos = null;
+		//medicineDtos = medicineService.getMedicine();
+		mav = new ModelAndView();
+		//mav.addObject("medicines", medicineDtos);
+		mav.setViewName("medplus");
+		return mav;
+	}
+
+}

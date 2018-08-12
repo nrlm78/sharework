@@ -1,0 +1,39 @@
+package com.mp.common;
+
+import java.util.Set;
+
+import javax.servlet.ServletContainerInitializer;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
+
+import com.servlet.MyServlet;
+
+public class MyServletinitializer implements ServletContainerInitializer {
+
+	@Override
+	public void onStartup(Set<Class<?>> arg0, ServletContext servletContext) throws ServletException {
+	
+		
+		System.out.println("starting........");
+		/*
+		  XmlWebApplicationContext ctx = null;
+		DispatcherServlet dispatcher = null;
+		ctx = new XmlWebApplicationContext();
+		ctx.setConfigLocation("/WEB-INF/dispatcher-servlet.xml");
+		dispatcher=new DispatcherServlet(ctx);
+		
+		*/
+		
+		//ServletRegistration.Dynamic dynamic = servletContext.addServlet("dispatcher", dispatcher);
+		
+		ServletRegistration.Dynamic dynamic = servletContext.addServlet("myServlet", new MyServlet());
+		
+		dynamic.setLoadOnStartup(1);
+		dynamic.addMapping("/myServlet");
+
+		System.out.println("done............");
+		
+	}
+
+}

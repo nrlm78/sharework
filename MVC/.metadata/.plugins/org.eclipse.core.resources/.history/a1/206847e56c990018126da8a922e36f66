@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<!-- SimpleUrlHandlerMapping -->
+	<!-- <bean id="aboutUsController" class="com.hm.controller.AboutUsController" 
+		/> <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> 
+		<property name="mappings"> <props> <prop key="about-us.mvc">aboutUsController</prop> 
+		</props> </property> </bean> -->
+
+	<!-- BeanNameUrlHandlerMapping -->
+
+	<!-- <bean name="/about-us.mvc" class="com.hm.controller.AboutUsController" 
+		/> <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/> -->
+
+	<!-- ControllerBeanNameHandlerMapping -->
+	<!-- <bean name="about-us.mvc" class="com.hm.controller.AboutUsController" 
+		/> <bean class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping"/> -->
+
+
+	<bean class="com.hm.controller.AboutUsController" />
+	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+	
+	<property name=""></property>
+	</bean>
+
+
+
+
+
+
+
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans>

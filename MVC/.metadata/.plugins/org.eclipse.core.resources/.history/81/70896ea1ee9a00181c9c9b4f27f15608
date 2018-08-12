@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<!-- 
+	<bean id="cc"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="contact-us"></property>
+	</bean>
+	<bean id="ac"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="locate"></property>
+	</bean>
+	<bean id="vhm"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/contact-us.htm">cc</prop>
+				<prop key="/locate.htm">ac</prop>
+
+			</props>
+		</property>
+	</bean>
+ -->
+
+<bean class="org.springframework.web.servlet.mvc.UrlFilenameViewController"></bean>
+
+
+	<bean id="cvr"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+
+	</bean>
+
+</beans>

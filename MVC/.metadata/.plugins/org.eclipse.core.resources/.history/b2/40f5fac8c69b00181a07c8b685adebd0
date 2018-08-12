@@ -1,0 +1,23 @@
+package com.mp.service;
+
+import java.util.List;
+
+import com.mp.Dao.MedicineDao;
+import com.mp.dto.MedicineDto;
+
+public class MedicineServiceImpl implements MedicineService {
+
+	private MedicineDao dao;
+	@Override
+	public List<MedicineDto> getMedicine() {
+		List<MedicineDto> medicineDtos=null
+		
+		return medicineDtos;
+	}
+	
+	
+	public MedicineDao getDao() {
+		return dao;
+	}
+
+}

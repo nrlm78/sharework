@@ -1,0 +1,7 @@
+package com.hm.controller;
+
+import org.springframework.web.servlet.mvc.AbstractController;
+
+public class AboutUsController  extends AbstractController{
+
+}

@@ -1,0 +1,5 @@
+package com.mp.service;
+
+public class MedicineServiceImpl implements MedicineService {
+
+}

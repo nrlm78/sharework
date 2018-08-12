@@ -1,0 +1,29 @@
+package com.mp.Dao;
+
+import java.util.List;
+
+import javax.sql.rowset.RowSetMetaDataImpl;
+import javax.swing.tree.RowMapper;
+import javax.swing.tree.TreePath;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.mp.bo.MedicineBo;
+
+public class MedicineDaoImpl implements MedicineDao {
+
+	private JdbcTemplate jdbcTemplate;
+	
+	@Override
+	public List<MedicineBo> fetchMedicine() {
+		
+		return null;
+	}
+
+	class MedicineRowMapper implements Row{
+	
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+}

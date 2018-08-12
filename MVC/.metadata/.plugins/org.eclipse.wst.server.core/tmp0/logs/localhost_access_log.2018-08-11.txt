@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:02:59 +0530] "GET /05-medplus_programatic/ HTTP/1.1" 404 1101
+127.0.0.1 - - [11/Aug/2018:00:03:17 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:03:18 +0530] "GET /05-medplus_programatic/ HTTP/1.1" 404 1101
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:03:49 +0530] "GET /05-medplus_programatic/contact-us.htm HTTP/1.1" 404 1115
+127.0.0.1 - - [11/Aug/2018:00:06:29 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:06:29 +0530] "GET /05-medplus_programatic/ HTTP/1.1" 404 1101
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:06:52 +0530] "GET /05-medplus_programatic/contact-us.htm HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:07:57 +0530] "GET /05-medplus_programatic/contact-us.htm HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:07:57 +0530] "GET /05-medplus_programatic/contact-us.htm HTTP/1.1" 404 1115
+127.0.0.1 - - [11/Aug/2018:00:18:46 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Aug/2018:00:18:48 +0530] "GET /test1/ HTTP/1.1" 200 57

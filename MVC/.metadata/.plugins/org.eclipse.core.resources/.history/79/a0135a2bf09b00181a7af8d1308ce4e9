@@ -1,0 +1,37 @@
+package com.mp.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.web.servlet.mvc.Controller;
+
+import com.mp.dto.MedicineDto;
+import com.mp.service.MedicineService;
+
+public class MedicineController implements Controller {
+
+	private MedicineService medicineService;
+
+	
+	
+	@Override
+	protected ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) {
+
+		ModelAndView mav = null;
+		//List<MedicineDto> medicineDtos = null;
+		//medicineDtos = medicineService.getMedicine();
+		mav = new ModelAndView();
+		//mav.addObject("medicines", medicineDtos);
+		mav.setViewName("medplus");
+		return mav;
+	}
+
+	public MedicineService getMedicineService() {
+		return medicineService;
+	}
+
+}

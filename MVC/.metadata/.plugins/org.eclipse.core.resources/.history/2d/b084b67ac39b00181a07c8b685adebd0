@@ -1,0 +1,30 @@
+package com.mp.Dao;
+
+import java.util.List;
+import org.springframework.jdbc.core.RowMapper;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.mp.bo.MedicineBo;
+
+public class MedicineDaoImpl implements MedicineDao {
+
+	private JdbcTemplate jdbcTemplate;
+	
+	@Override
+	public List<MedicineBo> fetchMedicine() {
+		
+		RowMapper<MedicineBo> medicineBo = (rs, mNo) -> {
+
+			MedicineBo bo = new MedicineBo();
+			
+			return bo;
+
+		};
+		
+		return null;
+	}
+
+	
+
+}

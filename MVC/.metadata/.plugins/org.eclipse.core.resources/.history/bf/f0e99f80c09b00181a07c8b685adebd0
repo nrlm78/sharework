@@ -1,0 +1,8 @@
+package com.mp.Dao;
+
+import java.util.List;
+
+public interface MedicineDao {
+
+	public List<MedicineDao> fetchMedicine();
+}
